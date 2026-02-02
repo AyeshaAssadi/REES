@@ -1,0 +1,92 @@
+.hero-section {
+    min-height: 75vh;
+    background: 
+      linear-gradient(rgba(0,0,0,0.3)),
+      url("../images/logo/REES\ background\ image.png"); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+  }
+
+.hero-overlay-box {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px 45px;
+    border-radius: 8px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    color: #F5F5DC;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: textFadeUp 1.5s ease-in forwards;
+  }
+
+  @keyframes textFadeUp{
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+.hero-text {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 1.1rem;
+    color: #F5F5DC;
+    opacity: 0;
+    transform: translateY(-15px);
+    animation: textFadeUp 1.5s ease-in forwards;
+    animation-delay: 0.9s;
+  }
+
+  .hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+  
+  .hero-btn {
+    padding: 12px 28px;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .hero-btn:hover {
+    transform: translateY(-2px);
+  }
+
+  .contact-btn:hover{
+    background-color: #1e88e5;
+  }
+  
+
+@media (max-width: 992px){
+    .hero-section img{
+        max-width: 90%;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 60px 0;
+    }
+    
+    .hero-overlay-box {
+        padding: 30px;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}

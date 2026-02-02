@@ -1,0 +1,119 @@
+.footer {
+    width: 100%;
+    color: #fff;
+    font-size: 1.05rem;
+    /* color: black; */
+  }
+  
+  /* MAIN AREA */
+  .footer-main {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* LEFT – BLACK */
+  .footer-left {
+    flex: 1;
+    background: rgb(26, 25, 25);
+    padding: 40px;
+    color: #F5F5DC;
+  }
+
+  .footer-line {
+    height: 1px;               
+    width: 85%;              
+    background-color: #BDB27D; 
+    margin: 15px 0; 
+  }
+  
+  
+  /* RIGHT – DARK GREY */
+  .footer-right {
+    flex: 1;
+    background: #a38054;
+    padding: 40px;
+    position: relative;
+    color: #F5F5DC;
+  }
+  
+  /* SLANT EFFECT */
+  .footer-right::before {
+    content: "";
+    position: absolute;
+    left: -80px;
+    top: 0;
+    width: 160px;
+    height: 100%;
+    background: #a38054;
+    transform: skewX(25deg);
+    color: #F5F5DC;
+  }
+  
+  /* TEXT FIX OVER SLANT */
+  .footer-right * {
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* PHONE */
+  .phone {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  /* BLUE STRIP */
+  .footer-bottom {
+    background: #F5F5DC;
+    padding: 7px 40px;
+    color: #000;
+    text-align: center;
+  }
+
+  .blue{
+    color:#1e88e5;
+  }
+
+  @media (max-width: 768px) {
+    /* Stack sections */
+    .footer-main {
+      flex-direction: column;
+    }
+  
+    /* Full width blocks */
+    .footer-left,
+    .footer-right {
+      width: 100%;
+      padding: 25px 20px;
+    }
+  
+    /* REMOVE slant on mobile */
+    .footer-right::before {
+      display: none;
+    }
+  
+    /* Adjust text size */
+    .phone {
+      font-size: 18px;
+    }
+
+    .footer-bottom{
+        text-align: center;
+        padding: 5px 20px;
+    }
+  }
+
+  .contact-block{
+    margin-bottom: 24px;
+  }
+
+  .contact-block a{
+    color: #F5F5DC;
+    text-decoration: none;
+  }
+
+  .contact-block a:hover{
+    text-decoration: underline;
+  }
+  
+  

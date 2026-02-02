@@ -1,0 +1,71 @@
+.factory-title{
+    display: inline-block;
+  font-size: 2.3rem;
+  font-weight: 600;
+  color: #1e88e5;
+  margin-bottom: 8px;
+}
+
+.factory-text{
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+}
+
+.factory-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    color: #F5F5DC;
+    border-radius: 12px;
+}
+
+.factory-card {
+    position: relative; 
+    height: 350px;
+    width: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 3 / 4;
+}
+
+.machinery-card{
+    height: 300px
+}
+
+.factory-card img {
+    width: 100%;
+    height: 100%;
+    height: 350px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+    border-radius: 12px;
+}
+
+.factory-card:hover .factory-overlay {
+    opacity: 1;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 992px) {
+    #factory .row {
+    justify-content: center;
+    }
+
+    #factory .col-md-6,
+    #factory .col-lg-4 {
+        display: flex;
+        justify-content: center;
+    }
+
+      .factory-card{
+        /* max-width: 320px; */
+        /* width: 100%; */
+      }
+}

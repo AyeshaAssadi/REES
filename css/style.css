@@ -1,0 +1,39 @@
+@import url("navbar.css");
+@import url("hero.css");
+@import url("about.css");
+@import url("products.css");
+@import url("footer.css");
+@import url("factory.css");
+@import url("paperImpact.css");
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F5F5DC;
+}
+
+section{
+    scroll-margin-top: 345px;
+}
+
+
+@media (max-width: 992px) {
+    .section {
+        scroll-margin-top: 70px;
+    }
+}
+  
+
+/* @media (max-width: 576px){
+    .section{
+        scroll-margin-top: 345px;
+    }
+    .hero-section img{
+        max-width: 90%;
+    }
+    #factory p{
+        text-align: center;
+    }
+} */

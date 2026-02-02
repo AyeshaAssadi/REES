@@ -1,0 +1,38 @@
+.impact-title{
+    display: inline-block;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #1e88e5;
+    margin-bottom: 8px;
+}
+
+.impact-text{
+    font-size: 1.1rem;
+    margin-bottom: 14px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.impact-item i {
+    font-size: 5.3rem;
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+.impact-item h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.impact-item:hover {
+    transform: translateY(-6px);
+    color: #1565c0;
+  }
+
+@media (max-width: 768px) {
+    .impact-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
