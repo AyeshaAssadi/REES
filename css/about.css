@@ -27,7 +27,6 @@
     opacity: 0;
     transform: translateX(-45px);
     animation: textFadeUp 1s ease-out forwards;
-    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.2);
 } 
 
 @keyframes textFadeUp{
